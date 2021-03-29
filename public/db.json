@@ -1,0 +1,115 @@
+{
+  "pizza": [
+    {
+      "id": 0,
+      "ImageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/d9a24d88af8040d5aa94f48bf6f3b465_292x292.jpeg",
+      "name": "Микс",
+      "types": [0, 1],
+      "sizes": [26, 30, 40],
+      "price": 429,
+      "category": 0,
+      "rating": 5,
+      "dough": ["тонкое", "традиционное"]
+    },
+    {
+      "id": 1,
+      "ImageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/0fbe5a8c798d4c548c193c34ffb1b785_292x292.jpeg",
+      "name": "Двойной цыпленок Микс",
+      "types": [0, 1],
+      "sizes": [26, 30, 40],
+      "price": 299,
+      "category": 0,
+      "rating": 4,
+      "dough": ["тонкое", "традиционное"]
+    },
+    {
+      "id": 2,
+      "ImageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/a8413f18d18341b5a0de51e9a7807265_292x292.jpeg",
+      "name": "Цыпленок блю чиз",
+      "types": [0, 1],
+      "sizes": [26, 30, 40],
+      "price": 499,
+      "category": 0,
+      " rating": 5,
+      "dough": ["тонкое", "традиционное"]
+    },
+    {
+      "id": 3,
+      "ImageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/d13656f768ab486bbbba9e7bff965b71_292x292.jpeg",
+      "name": "Цезарь",
+      "types": [0, 1],
+      "sizes": [26, 30, 40],
+      "price": 429,
+      "category": 0,
+      "rating": 4,
+      "dough": ["тонкое", "традиционное"]
+    },
+    {
+      "id": 4,
+      "ImageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/26fa2948b6c74113afb9d09a3262fc26_292x292.jpeg",
+      "name": "Ветчина и грибы",
+      "types": [0, 1],
+      "sizes": [26, 30, 40],
+      "price": 329,
+      "category": 0,
+      "rating": 3,
+      "dough": ["тонкое", "традиционное"]
+    },
+    {
+      "id": 5,
+      "ImageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/72c7882f35ad4db1805bb43f09717d8d_292x292.jpeg",
+      "name": "Аррива!",
+      "types": [0, 1],
+      "sizes": [26, 30, 40],
+      "price": 397,
+      "category": 0,
+      "rating": 2,
+      "dough": ["тонкое", "традиционное"]
+    },
+    {
+      "id": 6,
+      "ImageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/dc5dc4e9-932a-4abf-9472-dfb6326ea9ee.jpg",
+      "name": "Мексиканская ",
+      "types": [0, 1],
+      "sizes": [26, 30, 40],
+      "price": 469,
+      "category": 0,
+      "rating": 4,
+      "dough": ["тонкое", "традиционное"]
+    },
+    {
+      "id": 7,
+      "ImageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/6d4e1c2c-1c81-40c6-95d9-0d19afcebcb5.jpg",
+      "name": "Четыре сезона",
+      "types": [0, 1],
+      "sizes": [26, 30, 40],
+      "price": 399,
+      "category": 0,
+      "rating": 3,
+      "dough": ["тонкое", "традиционное"]
+    },
+    {
+      "id": 8,
+      "ImageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/9c046e19-b7a6-47f5-b2be-91bb9d77a74b.jpg",
+      "name": "Двойная пепперони",
+
+      "types": [0, 1],
+      "sizes": [26, 30, 40],
+      "price": 430,
+      "category": 0,
+      "rating": 4,
+      "dough": ["тонкое", "традиционное"]
+    },
+    {
+      "id": 9,
+      "ImageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/3327d3dd-1feb-443f-97b6-731fa8e64fac.jpg",
+      "name": "Пицца-пирог",
+      "types": [0, 1],
+      "sizes": [26, 30, 40],
+      "price": 397,
+      "category": 0,
+      "rating": 5,
+      "dough": ["тонкое", "традиционное"]
+    }
+  ]
+}

@@ -2,30 +2,32 @@ import { useEffect, useState, useRef } from 'react';
 import classNames from 'classnames';
 const Sort = ({ sort }) => {
   const [showPopup, setShowPopup] = useState(false);
-  const [active, setActive] = useState(null);
-  const [visiblePopupName, setVisiblePopupName] = useState('популярности');
+  const [active, setActive] = useState(0);
   const sortRef = useRef(null);
+  const title = sort[active];
 
+  const onSelectItem = (index) => {
+    setActive(index);
+    setShowPopup(false);
+  };
   const toggleVisiblePopup = () => {
     setShowPopup(!showPopup);
   };
 
-  const toggleActiveClass = (index, sorts) => {
-    return setActive(index), setVisiblePopupName(sorts);
-  };
-
   const handleOutsideClick = (e) => {
-    console.log(e.target);
+    if (!e.path.includes(sortRef.current)) {
+      setShowPopup(false);
+    }
   };
 
   useEffect(() => {
     document.body.addEventListener('click', handleOutsideClick);
-    console.log(sortRef.current);
   }, []);
   return (
     <div className="sort" ref={sortRef}>
       <div className="sort__label">
         <svg
+          className={showPopup ? 'rotated' : ''}
           width="10"
           height="6"
           viewBox="0 0 10 6"
@@ -37,7 +39,7 @@ const Sort = ({ sort }) => {
           />
         </svg>
         <b>Сортировка по:</b>
-        <span onClick={toggleVisiblePopup}>{visiblePopupName}</span>
+        <span onClick={toggleVisiblePopup}>{title}</span>
       </div>
       {showPopup && (
         <div className="sort__popup">
@@ -47,7 +49,7 @@ const Sort = ({ sort }) => {
                 <li
                   key={`${sorts}_${index}`}
                   className={classNames(active === index ? 'active' : '')}
-                  onClick={() => toggleActiveClass(index, sorts)}>
+                  onClick={() => onSelectItem(index)}>
                   {sorts}
                 </li>
               ))}

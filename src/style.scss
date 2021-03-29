@@ -724,3 +724,11 @@ body {
   font-weight: 600;
   font-size: 18px;
 }
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+.disabled {
+  opacity: 0.4;
+}
