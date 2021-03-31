@@ -1,12 +1,11 @@
 import { useState } from 'react';
 import classNames from 'classnames';
+import PropTypes from 'prop-types';
 
 const CardPizza = ({ name, ImageUrl, price, sizes, dough }) => {
   const [activeType, setActiveType] = useState(0);
   const [activeDough, setDough] = useState(0);
-  const onSelectType = (index, state) => {
-    state(index);
-  };
+  const onSelectType = (index, state) => state(index);
 
   return (
     <div className="pizza-block">
@@ -17,6 +16,7 @@ const CardPizza = ({ name, ImageUrl, price, sizes, dough }) => {
           {dough &&
             dough.map((items, i) => (
               <li
+                key={`${items}_${i}`}
                 className={classNames(activeDough === i ? 'active' : 'disabled')}
                 onClick={() => onSelectType(i, setDough)}>
                 {items}
@@ -27,9 +27,10 @@ const CardPizza = ({ name, ImageUrl, price, sizes, dough }) => {
           {sizes &&
             sizes.map((items, i) => (
               <li
+                key={`${items}_${i}`}
                 className={classNames(activeType === i ? 'active' : 'disabled')}
                 onClick={() => onSelectType(i, setActiveType)}>
-                {items}
+                {items} см.
               </li>
             ))}
         </ul>
@@ -55,5 +56,11 @@ const CardPizza = ({ name, ImageUrl, price, sizes, dough }) => {
     </div>
   );
 };
-
+CardPizza.propTypes = {
+  name: PropTypes.string.isRequired,
+  ImageUrl: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  types: PropTypes.arrayOf(PropTypes.number).isRequired, //только массив чисел
+  sizes: PropTypes.arrayOf(PropTypes.number).isRequired,
+};
 export default CardPizza;

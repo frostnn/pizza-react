@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import classNames from 'classnames';
-const Categories = ({ items }) => {
+const Categories = ({ items, onClickItem }) => {
   const [active, setActive] = useState(null);
   const onSelectItem = (index) => {
+    onClickItem(index);
     setActive(index);
   };
   return (
